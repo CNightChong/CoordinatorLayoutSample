@@ -40,7 +40,7 @@ public class TabFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_tab, null);
+        View view = inflater.inflate(R.layout.fragment_tab, container, false);
         ButterKnife.bind(this, view);
         ViewHelper.initRecyclerView(getContext(), mRvList, true);
         return view;

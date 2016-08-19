@@ -73,6 +73,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         getTheme().resolveAttribute(R.attr.colorPrimaryDark, typedValue, true);
         return typedValue.data;
     }
+
     /**
      * 初始化 Toolbar
      *

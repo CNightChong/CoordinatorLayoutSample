@@ -39,10 +39,10 @@ public class TabActivity extends BaseActivity {
         setContentView(R.layout.activity_tab);
         ButterKnife.bind(this);
         initToolBar(mToolBar, true, "Tab");
-        _initTabLayout();
+        initTabLayout();
     }
 
-    private void _initTabLayout() {
+    private void initTabLayout() {
         List<Fragment> fragments = new ArrayList<>();
         List<String> titles = new ArrayList<>();
         titles.add("One");
